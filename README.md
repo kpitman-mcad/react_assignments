@@ -1,8 +1,8 @@
 # React Learning Pages
->Programming for Web React Exercises and Assignments
+>Programming for Web: React Exercises and Assignments
 
 ## About
-This page is a collection of excercises and assignments for learning React as part of the MAGWD program at MCAD.
+This page is a collection of exercises and assignments for learning React as part of the MAGWD program at MCAD.
 
 -   [Week 11 / Exercise 11](https://kpitman-mcad.github.io/react_assignments/week11/exercise11/)
 
