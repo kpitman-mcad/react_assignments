@@ -19,7 +19,9 @@
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
-  background: var(--bg);
+  /* background: var(--bg); */
+  background: center / contain url("assets/heic0601a.jpg");
+  /* background-size: contain; */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -32,10 +34,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
+    --text: #eadfd9;
+    --text-h: #b7caef;
+    /* --bg: #16171d; */
+    /* --border: #2e303a; */
+    --border: #e95f3c;
     --code-bg: #1f2028;
     --accent: #c084fc;
     --accent-bg: rgba(192, 132, 252, 0.15);
@@ -64,6 +67,22 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+}
+
+.app-simplecard {
+  background: rgba(72,88,92, 0.5);
+  padding: 0.2rem 0 1rem 0;
+  margin: 1rem 12rem;
+  border: 0.1rem solid #e95f3c;
+  border-radius: 50px;
+}
+
+.app-footer {
+  background: rgba(72,88,92, 0.5);
+  padding: 1rem;
+  margin: 1rem 16rem;
+  border: 0.1rem solid #e95f3c;
+  border-radius: 50px;
 }
 
 h1,
