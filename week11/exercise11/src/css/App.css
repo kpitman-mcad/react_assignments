@@ -9,12 +9,11 @@
   /* customization */
   background: center / contain url("../assets/heic0601a.jpg");
   border: 0.1rem solid #e95f3c;
-
 }
 
 .app-simplecard {
   background: rgba(72,88,92, 0.5);
-  padding: 0.2rem 0 1rem 0;
+  padding: 1rem;
   margin: 1rem 12rem;
   border: 0.1rem solid #e95f3c;
   border-radius: 50px;
@@ -26,4 +25,14 @@
   margin: 1rem 16rem;
   border: 0.1rem solid #e95f3c;
   border-radius: 50px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0.5rem;
+}
+
+p {
+  margin: 0.5rem;
 }
