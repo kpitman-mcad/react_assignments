@@ -1,5 +1,5 @@
 // IMport the CSS file for global or component styles
-import './App.css';
+import './css/App.css';
 
 // --- SimpleCard Component ---
 // This is a functional component that accepts props. aka the child component!
