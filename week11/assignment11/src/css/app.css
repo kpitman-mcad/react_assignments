@@ -1,0 +1,53 @@
+/* --- Root containter ---
+  Centers the entire app and caps its width on wide screens */
+#root {
+  max-width: 1280px; /* stop the layout from stretching too wide */
+  margin: 0 auto; /* center the container horizontally */
+  padding: 2rem; /* breathing room on all sidees */
+  text-align: center; /* center inline content like headings */
+
+  /* customization */
+  /* background: center / contain url("../assets/heic0601a.jpg"); */
+  border: 0.1rem solid #21c57e;
+  border-radius: 10px;
+  background:top center fixed url("../assets/pexels-waterfall.jpg");
+  /* image source: https://www.pexels.com/photo/elegant-waterfall-cascade-in-tranquil-nature-setting-34375615/ */
+}
+
+.app-main {
+  color: white;
+}
+
+.app-header {
+  background: rgba(36,224,161, 0.2);
+  padding: 1rem;
+  /* margin: 1rem 16rem; */
+  border: 0.1rem solid #21c57e;
+  border-radius: 10px;
+}
+
+.app-projectcard {
+  background: rgba(36,224,161, 0.2);
+  padding: 1rem;
+  margin: 1rem 12rem;
+  border: 0.1rem solid #21c57e;
+  border-radius: 10px;
+}
+
+.app-footer {
+  background: rgba(36,224,161, 0.2);
+  padding: 1rem;
+  /* margin: 1rem auto; */
+  border: 0.1rem solid #21c57e;
+  border-radius: 10px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0.5rem;
+}
+
+p {
+  margin: 0.5rem;
+}
