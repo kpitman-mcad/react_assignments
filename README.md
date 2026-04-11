@@ -8,6 +8,6 @@ This page is a collection of exercises and assignments for learning React as par
 
 ## Author
 
-Kevin Pitman, Web Development, MCAD, Winter 2026
+Kevin Pitman, Programming for Web, MCAD, Winter 2026
 
 *Note, this is an academic exercise only.*
