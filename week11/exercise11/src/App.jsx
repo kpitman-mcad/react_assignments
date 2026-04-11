@@ -7,7 +7,7 @@ import './App.css';
 function SimpleCard({ title, content }) {
   // 'title' and 'content' come from the parent component.
   return (
-    <div class="app-simplecard">
+    <div className="app-simplecard">
       {/* Display the title prop in a heading */}
       <h3>{title}</h3>
       {/* Display the content prop in a paragraph */}
