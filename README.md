@@ -9,7 +9,7 @@ This page is a collection of exercises and assignments for learning React as par
 -   [Week 11 / Assignment 11](https://kpitman-mcad.github.io/react_assignments/week11/assignment11/)
 
 ### Week 12
--   [Week 12 / Exercise 12](#) (not yet live)
+-   [Week 12 / Exercise 12](https://kpitman-mcad.github.io/react_assignments/week12/exercise12/)
 -   [Week 12 / Assignment 12](#) (not yet live)
 
 ### Week 13
