@@ -84,7 +84,6 @@ a:hover {
   padding: 1rem;
   margin: auto;
   max-width: 800px;
-  min-width: 400px;
   max-height: auto;
   border: 0.25rem solid #190601;
   border-radius: 5px;
@@ -124,6 +123,10 @@ a:hover {
 }
 
 @media (max-width: 700px) {
+  h1 {
+    font-size: 15vw;
+    font-weight: 800;
+  }
   .header {
     width: auto;
   }
@@ -131,7 +134,10 @@ a:hover {
     flex-direction: column;
   }
   .book-card-flex {
-    margin: 1rem 2rem;
+    margin: 1rem auto 0;
     gap: 0.5rem;
+  }
+  .footer {
+    width: auto;
   }
 }
