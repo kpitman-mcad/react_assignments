@@ -3,7 +3,7 @@ import { books } from "../data/bookData";
 
 function BookList() {
   return (
-    <div className="book-grid">
+    <div className="book-list">
       {books.map((book) => (
         <BookCard
           key={book.id}

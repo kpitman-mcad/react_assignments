@@ -65,11 +65,8 @@ a:hover {
   line-height: 3.5rem;
 }
 
-.app {
+.book-list {
   text-align: left;
-}
-
-.book-grid {
   display: grid;
   grid-template-columns: repeat(1, auto);
   grid-template-rows: repeat(6, auto);

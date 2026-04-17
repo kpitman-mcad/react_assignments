@@ -1,20 +1,14 @@
 // Import the CSS file for global or component styles
 import "./css/app.css";
-import Header from "./components/Header";
-import BookList from "./components/BookList";
-import Footer from "./components/Footer";
+import Home from "./pages/Home";
 
 // --- App Component ---
 // This is the main component of the app (the parent)
 function App() {
   return (
-    <>
-      <Header />
-      <div className="app">
-        <BookList />
-      </div>
-      <Footer />
-    </>
+    <div className="app">
+      <Home />
+    </div>
   );
 }
 
