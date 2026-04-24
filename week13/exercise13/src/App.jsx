@@ -1,8 +1,6 @@
 // Import the CSS file for global or component styles
 import "./css/app.css";
 import Home from "./pages/Home";
-// import About from "./pages/About";
-// import Navbar from "./components/Navbar";
 
 // --- App Component ---
 // This is the main component of the app (the parent)
