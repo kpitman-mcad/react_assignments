@@ -200,6 +200,9 @@ a:hover {
   .header {
     width: auto;
   }
+  .navbar {
+    width: auto;
+  }  
   .book-card {
     flex-direction: column;
     width: 100%;
