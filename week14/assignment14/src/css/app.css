@@ -129,13 +129,13 @@ a:hover {
 .home-div h3 {
   background-color: rgb(52, 199, 130);
   margin: 0.2rem auto;
-  padding: 0.2rem;
+  padding: 0.2rem 1rem;
 }
 
 .projects-div h3 {
   background-color: rgb(52, 199, 130);
   margin: 0.2rem auto;
-  padding: 0.2rem;
+  padding: 0.2rem 1rem;
 }
 
 .project-list {
@@ -233,7 +233,7 @@ a:hover {
 .about-div h3 {
   background-color: rgb(52, 199, 130);
   margin: 0.2rem auto;
-  padding: 0.2rem;
+  padding: 0.2rem 1rem;
 }
 
 .about {
@@ -269,6 +269,9 @@ a:hover {
     font-size: 10vw;
     font-weight: 800;
   }
+  h3 {
+    text-align: left;
+  }
   .header {
     width: auto;
     line-height: 2.5rem;
@@ -277,6 +280,14 @@ a:hover {
     width: auto;
     flex-direction: column;
     gap: 0.2rem;
+    padding: 0.5rem 1rem;
+  }
+  .navbar__links {
+    justify-content: space-between;
+  }
+  .navbar a {
+    width: 100%;
+    text-align: center;
   }
   .project-card {
     width: 100%;
@@ -295,7 +306,7 @@ a:hover {
     gap: 0.5rem;
   }
   .about {
-    margin: 1rem;
+    margin: 2rem 1rem;
   }
   .krp-image {
     width: 100%;
