@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import ProjectsPage from "./pages/ProjectsPage";
 import About from "./pages/About";
+import SunshineKissProj from "./pages/SunshineKissProj";
 import Footer from "./components/Footer";
 import { HashRouter, Routes, Route } from "react-router-dom";
 
@@ -24,6 +25,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projectspage" element={<ProjectsPage />} />
             <Route path="/about" element={<About />} />
+            <Route path="/sunshinekissproj" element={<SunshineKissProj />} />
           </Routes>
         </main>
         <Footer />
