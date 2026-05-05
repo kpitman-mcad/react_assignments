@@ -8,8 +8,8 @@ import About from "./pages/About";
 import P5Sketch from "./components/P5Sketch";
 import Footer from "./components/Footer";
 import { HashRouter, Routes, Route } from "react-router-dom";
-// import orbitSketch from "./sketches/orbitSketch";
-import sunshineKissSketch from "./sketches/sunshineKissSketch";
+// Sketch js import
+import irrEggular from "./sketches/irrEggular";
 
 // --- App Component ---
 // This is the main component of the app (the parent)
@@ -29,7 +29,13 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route
               path="/p5sketch"
-              element={<P5Sketch sketch={sunshineKissSketch} />}
+              element={
+                <P5Sketch
+                  sketch={irrEggular}
+                  className="p5sketch-irreggular"
+                  title="IrrEggular"
+                />
+              }
             />
           </Routes>
         </main>

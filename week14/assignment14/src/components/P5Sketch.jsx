@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-export default function P5Sketch({ sketch }) {
+function P5Sketch({ sketch, className = "", title = "" }) {
   // Reference to the DOM element where p5 will attach the canvas
   const containerRef = useRef(null);
 
@@ -22,8 +22,15 @@ export default function P5Sketch({ sketch }) {
     return () => {
       instanceRef.current?.remove();
     };
-  }, []);
+  }, [sketch]);
 
   // Empty div acts as the mounting point for the p5 canvas
-  return <div ref={containerRef} />;
+  return (
+    <div>
+      <h3>{title}</h3>
+      <div ref={containerRef} className={className}></div>
+    </div>
+  );
 }
+
+export default P5Sketch;
