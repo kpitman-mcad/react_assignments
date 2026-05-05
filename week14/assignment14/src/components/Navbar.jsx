@@ -12,8 +12,8 @@ function Navbar() {
         return "Projects";
       case "/about":
         return "About";
-      case "/sunshinekissproj":
-        return "Sunshine Kiss";
+      case "/p5sketch":
+        return "P5 Sketch";
       default:
         return "Page";
     }
@@ -30,7 +30,7 @@ function Navbar() {
           <NavLink to="/">Home</NavLink>
           <NavLink to="/projectspage">Projects</NavLink>
           <NavLink to="/about">About</NavLink>
-          <NavLink to="/sunshinekissproj">p5.js</NavLink>
+          <NavLink to="/p5sketch">Sketch</NavLink>
         </div>
       </nav>
     </div>

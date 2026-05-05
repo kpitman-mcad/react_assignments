@@ -5,9 +5,11 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import ProjectsPage from "./pages/ProjectsPage";
 import About from "./pages/About";
-import SunshineKissProj from "./pages/SunshineKissProj";
+import P5Sketch from "./components/P5Sketch";
 import Footer from "./components/Footer";
 import { HashRouter, Routes, Route } from "react-router-dom";
+// import orbitSketch from "./sketches/orbitSketch";
+import sunshineKissSketch from "./sketches/sunshineKissSketch";
 
 // --- App Component ---
 // This is the main component of the app (the parent)
@@ -25,7 +27,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projectspage" element={<ProjectsPage />} />
             <Route path="/about" element={<About />} />
-            <Route path="/sunshinekissproj" element={<SunshineKissProj />} />
+            <Route
+              path="/p5sketch"
+              element={<P5Sketch sketch={sunshineKissSketch} />}
+            />
           </Routes>
         </main>
         <Footer />
