@@ -19,8 +19,8 @@ function ProjectCard({ title, author, image, link, description }) {
             onClick={toggleDescription}
             style={{
               backgroundColor: showDescription
-                ? "rgba(74, 255, 66, 0.5)"
-                : "rgba(74, 255, 66)",
+                ? "rgba(74, 255, 66, 0.3)"
+                : "rgba(74, 255, 66, 0.1)",
               color: showDescription
                 ? "rgba(203, 62, 250, 0.5)"
                 : "rgba(203, 62, 250, 0.8)",
