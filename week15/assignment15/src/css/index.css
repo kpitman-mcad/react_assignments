@@ -1,0 +1,29 @@
+/* <html> root of the DOM */
+:root {
+  --text: rgb(255, 255, 255);
+  --text-h: rgb(185, 41, 123);
+  --bg: rgb(0, 0, 0);
+  --border: rgb(230, 216, 88);
+  --accent: rgb(0, 65, 145);
+  --accent-bg: rgb(0, 38, 85);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
+
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Normalize */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0; /* remove default browser margins */
+  padding: 0; /* remove default broser padding */
+}

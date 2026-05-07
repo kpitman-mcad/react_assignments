@@ -1,0 +1,4 @@
+Standing outside the Dungeon (Enter)
+Storm clouds pour across the sky, crackling with lightning that brightens the landscape in sharp long shadows, while the thunder rolls rumbling and cacophonous. The branches of trees lash in the wind and rain pelts your cloak, soaking you through to your shivering skin. Ahead of you, in the shadow of a rocky outcrop NORTH of the trailside, you catch sight of a timber door set in the stone slope. It is gnarled and scored by unknown eons. Perhaps someone inside would be willing to provide you with shelter?
+Running away from the Dungeon (Exit)
+You have escaped from the dungeon.
