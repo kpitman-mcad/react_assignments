@@ -21,7 +21,7 @@ This page is a collection of exercises and assignments for learning React as par
 -   [Week 14 / Assignment 14](https://kpitman-mcad.github.io/react_assignments/week14/assignment14/)
 
 ### Week 15
--   [Week 15 / Final Project](#) (not yet live)
+-   [Week 15 / Final Project](https://kpitman-mcad.github.io/react_assignments/week15/assignment15)
 
 ## Author
 
