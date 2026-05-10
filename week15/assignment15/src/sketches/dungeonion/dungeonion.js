@@ -23,8 +23,8 @@ export default function dungeonion(p) {
   let message2 = " ";
   let inventory = [];
   let mapLocation = [];
-  let offsetX;
-  let offsetY;
+  // let offsetX;
+  // let offsetY;
   let r;
   let g;
   let b;
@@ -54,7 +54,7 @@ export default function dungeonion(p) {
   };
 
   p.setup = () => {
-    p.createCanvas(p.windowWidth, p.windowHeight);
+    p.createCanvas(1000, 700);
 
     // Instantiate imported p5 functions!!!
     gridLocation = createGridLocation();
@@ -76,15 +76,28 @@ export default function dungeonion(p) {
     r = p.random(255);
     g = p.random(255);
     b = p.random(255);
+    inputField.position(450, 450);
+
+    // Fix the input field in position relative to the canvas
+    // Suggested by Claude
+    const repositionField = () => {
+      const rect = p.canvas.getBoundingClientRect();
+      inputField.position(rect.left + 450, rect.top + 450 + window.scrollY);
+    };
+
+    repositionField();
+    p.windowResized = () => {
+      repositionField();
+    };
   };
 
   p.draw = () => {
     p.background(0);
 
     // Interface location centered on canvas.
-    offsetX = p.width / 2 - 500;
-    offsetY = p.height / 2 - 350;
-    p.translate(offsetX, offsetY);
+    // offsetX = p.width / 2 - 500;
+    // offsetY = p.height / 2 - 350;
+    // p.translate(offsetX, offsetY);
 
     illustrationWindow(r, g, b, currentLocation);
 
@@ -93,7 +106,6 @@ export default function dungeonion(p) {
     // Set what function runs when you enter each room.
     p.loadAdventure(currentLocation);
 
-    inputField.position(offsetX + 450, offsetY + 450);
     p.fieldStyle();
 
     illustrationTorch();

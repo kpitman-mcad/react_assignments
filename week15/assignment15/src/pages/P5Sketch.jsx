@@ -8,6 +8,7 @@ function P5Sketch({ sketch, className = "", title = "" }) {
   const instanceRef = useRef(null);
 
   useEffect(() => {
+    // Revisions suggested by Claude
     // Prevent double-mounting in React StrictMode
     if (instanceRef.current) return;
 
@@ -36,22 +37,6 @@ function P5Sketch({ sketch, className = "", title = "" }) {
       instanceRef.current = null; // ← reset so re-mount works cleanly
     };
   }, [sketch]);
-
-  // useEffect(() => {
-  //   if (!window.p5) {
-  //     console.error("p5 not loaded");
-  //     return;
-  //   }
-
-  //   // Create a new p5 instance and attach it to the container div
-  //   instanceRef.current = new window.p5(sketch, containerRef.current);
-
-  //   // Cleanup function runs when component unmounts
-  //   // Prevents multiple canvases stacking or memory leaks
-  //   return () => {
-  //     instanceRef.current?.remove();
-  //   };
-  // }, [sketch]);
 
   // Empty div acts as the mounting point for the p5 canvas
   return (
