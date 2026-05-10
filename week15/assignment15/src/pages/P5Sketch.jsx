@@ -8,20 +8,50 @@ function P5Sketch({ sketch, className = "", title = "" }) {
   const instanceRef = useRef(null);
 
   useEffect(() => {
-    if (!window.p5) {
-      console.error("p5 not loaded");
-      return;
+    // Prevent double-mounting in React StrictMode
+    if (instanceRef.current) return;
+
+    const init = () => {
+      if (!window.p5) {
+        console.error("p5 not loaded");
+        return;
+      }
+      instanceRef.current = new window.p5(sketch, containerRef.current);
+    };
+
+    if (window.p5) {
+      init();
+    } else {
+      const script = document.querySelector('script[src*="p5"]');
+      if (script) {
+        script.addEventListener("load", init);
+        return () => script.removeEventListener("load", init);
+      } else {
+        console.error("No p5 script tag found in document");
+      }
     }
 
-    // Create a new p5 instance and attach it to the container div
-    instanceRef.current = new window.p5(sketch, containerRef.current);
-
-    // Cleanup function runs when component unmounts
-    // Prevents multiple canvases stacking or memory leaks
     return () => {
       instanceRef.current?.remove();
+      instanceRef.current = null; // ← reset so re-mount works cleanly
     };
   }, [sketch]);
+
+  // useEffect(() => {
+  //   if (!window.p5) {
+  //     console.error("p5 not loaded");
+  //     return;
+  //   }
+
+  //   // Create a new p5 instance and attach it to the container div
+  //   instanceRef.current = new window.p5(sketch, containerRef.current);
+
+  //   // Cleanup function runs when component unmounts
+  //   // Prevents multiple canvases stacking or memory leaks
+  //   return () => {
+  //     instanceRef.current?.remove();
+  //   };
+  // }, [sketch]);
 
   // Empty div acts as the mounting point for the p5 canvas
   return (
