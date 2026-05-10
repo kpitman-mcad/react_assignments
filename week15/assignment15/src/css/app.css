@@ -146,6 +146,10 @@ a:hover {
   filter: drop-shadow(0 0 5px var(--accent-border));
 }
 
+.mobile-menu-button {
+  display: none;
+}
+
 .about {
   border: 0.1rem solid var(--border);
   max-width: 512px;
@@ -222,10 +226,25 @@ a:hover {
   }
   .navbar__links {
     justify-content: space-between;
+    width: auto;
+    /* height: 2rem; */
+    flex-direction: row;
+    gap: 0.3rem;
   }
   .navbar a {
+    background-color: var(--accent);
     width: 100%;
-    text-align: center;
+    overflow: hidden;
+    /* border-radius: 0; */
+    color: var(--accent);
+    flex-grow: 1;
+  }
+  .navbar a:hover {
+    background-color: var(--bg);
+    color: var(--text-h);
+    filter: drop-shadow(0 0 5px var(--accent-border));
+    width: 100%;
+    overflow: visible;
   }
   .about {
     margin: 2rem 1rem;
