@@ -24,7 +24,7 @@ Over 12 weeks we gained programming experience by coding sketches in p5.js, then
 ### Week 15
 -   [Week 15 / Final Project](https://kpitman-mcad.github.io/react_assignments/week15/assignment15)
 
-## Build With
+## Built With
 - P5js - The JavaScript editor used
 - React
 - JavaScript (ES6+)
