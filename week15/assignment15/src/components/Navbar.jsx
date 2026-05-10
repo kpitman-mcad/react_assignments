@@ -9,11 +9,11 @@ function Navbar() {
       case "/":
         return "Introduction";
       case "/notbird":
-        return "Not Bird On A Wire";
+        return "p5.js Sketch";
       case "/irreggular":
-        return "irrEggular";
+        return "p5.js Sketch";
       case "/dungeonion":
-        return "Dungeonion";
+        return "p5.js Sketch";
       case "/about":
         return "About";
       default:
@@ -27,11 +27,11 @@ function Navbar() {
         <div className="navbar__brand">
           <h3>{getTitle()}</h3>
         </div>
-
+        {/* <button className="navbar__menu">Menu</button> */}
         <div className="navbar__links">
           <NavLink to="/">Introduction</NavLink>
-          <NavLink to="/notbird">Not Bird</NavLink>
           <NavLink to="/irreggular">irrEggular</NavLink>
+          <NavLink to="/notbird">Not Bird</NavLink>
           <NavLink to="/dungeonion">Dungeonion</NavLink>
           <NavLink to="/about">About</NavLink>
         </div>

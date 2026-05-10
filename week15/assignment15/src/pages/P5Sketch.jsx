@@ -40,7 +40,7 @@ function P5Sketch({ sketch, className = "", title = "" }) {
 
   // Empty div acts as the mounting point for the p5 canvas
   return (
-    <div>
+    <div className="p5sketch-div">
       <h3>{title}</h3>
       <div ref={containerRef} className={className}></div>
     </div>

@@ -25,6 +25,12 @@ body {
   background: var(--bg);
 }
 
+.app {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .app-div {
   display: flex;
   flex-direction: column; /* Stack children vertically */
@@ -34,7 +40,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   color: var(--text-h);
 }
 
@@ -150,6 +157,32 @@ a:hover {
   display: none;
 }
 
+.home {
+  max-width: 512px;
+  margin: 3rem auto 3rem;
+  text-align: left;
+}
+
+.home h4 {
+  text-align: left;
+  border-bottom: solid 0.1rem var(--text);
+  width: 100%;
+  line-height: 2.5rem;
+  margin: 2rem 0 1rem;
+}
+.home p {
+  margin: 0.5rem 0;
+}
+.home a {
+  background-color: var(--text);
+  padding: 0 0.5rem;
+}
+.home a:hover {
+  background-color: var(--accent-border);
+  color: var(--text);
+  padding: 0 0.5rem;
+}
+
 .about {
   border: 0.1rem solid var(--border);
   max-width: 512px;
@@ -165,32 +198,52 @@ a:hover {
   width: 100%;
 }
 
+.p5sketch-div h3 {
+  width: 100%;
+  font-size: 3rem;
+}
+
+.p5sketch-div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .p5sketch-irreggular {
-  border: 1rem solid var(--accent-border);
-  width: fit-content;
-  height: fit-content;
-  margin: 2rem auto;
-  padding: 2rem;
+  background-color: rgba(250, 214, 186, 0.95);
+  width: 100%;
+  flex: 1;
+  margin: 0 auto;
+  padding: 4rem;
   align-content: center;
+}
+.p5sketch-irreggular canvas {
+  border: 0.2rem solid rgb(186, 159, 138);
 }
 
 .p5sketch-notbird {
-  border: 1rem solid var(--accent-border);
-  width: fit-content;
-  height: fit-content;
-  margin: 2rem auto;
-  padding: 2rem;
+  background-color: rgba(210, 143, 45, 0.95);
+  width: 100%;
+  flex: 1;
+  margin: 0 auto;
+  padding: 4rem;
   align-content: center;
+}
+.p5sketch-notbird canvas {
+  border: 0.2rem solid rgb(0, 0, 0);
 }
 
 .p5sketch-dungeonion {
-  border: 0.5rem solid var(--accent-border);
-  width: fit-content;
-  height: fit-content;
-  margin: 2rem auto;
-  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.95);
+  width: 100%;
+  flex: 1;
+  margin: 0 auto;
+  padding: 4rem;
   align-content: center;
 }
+/* .p5sketch-dungeonion canvas {
+  border: 0.1rem solid rgb(255, 255, 255);
+} */
 
 .footer-div {
   background: var(--accent-bg);
@@ -245,6 +298,29 @@ a:hover {
     filter: drop-shadow(0 0 5px var(--accent-border));
     width: 100%;
     overflow: visible;
+  }
+  .home {
+    padding: 0 1rem;
+  }
+  .home a {
+    margin: 0;
+  }
+
+  .p5sketch-irreggular {
+    margin: 0 auto;
+    padding: 3rem 1rem;
+  }
+  .p5sketch-notbird {
+    margin: 0 auto;
+    padding: 3rem 1rem;
+  }
+  .p5sketch-dungeonion {
+    margin: 0 auto;
+    padding: 3rem 1rem;
+  }
+  .p5sketch-div h3 {
+    width: 100%;
+    font-size: 2rem;
   }
   .about {
     margin: 2rem 1rem;
