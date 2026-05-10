@@ -1,8 +1,9 @@
-# React Learning Pages
->Programming for Web: React Exercises and Assignments
+# Programming for the Web Portfolio
+>React Exercises and Assignments
 
 ## About
 This page is a collection of exercises and assignments for learning React as part of the MAGWD program at MCAD.
+Over 12 weeks we gained programming experience by coding sketches in p5.js, then moved on to implementing some of those concepts in functional pages built with React.
 
 ### Week 11
 -   [Week 11 / Exercise 11](https://kpitman-mcad.github.io/react_assignments/week11/exercise11/)
@@ -23,8 +24,14 @@ This page is a collection of exercises and assignments for learning React as par
 ### Week 15
 -   [Week 15 / Final Project](https://kpitman-mcad.github.io/react_assignments/week15/assignment15)
 
+## Build With
+>P5js - The JavaScript editor used
+>React
+>JavaScript (ES6+)
+>Vite / other tools
+
 ## Author
 
-Kevin Pitman, Programming for Web, MCAD, Winter 2026
+Kevin Pitman, Programming for Web, MCAD, Spring 2026
 
 *Note, this is an academic exercise only.*
