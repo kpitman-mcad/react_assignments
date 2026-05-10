@@ -40,16 +40,16 @@ export default function dungeonion(p) {
   let illustrationWindow;
 
   p.preload = () => {
-    asulFontRegular = p.loadFont("assets/Asul/Asul-Regular.ttf");
-    asulFontBold = p.loadFont("assets/Asul/Asul-Bold.ttf");
+    asulFontRegular = p.loadFont("Asul/Asul-Regular.ttf");
+    asulFontBold = p.loadFont("Asul/Asul-Bold.ttf");
     img = [
-      p.loadImage("assets/dungeonion/dungeon_interface_illustration.png"),
-      p.loadImage("assets/dungeonion/dungeon_item_illustration_torch.png"),
-      p.loadImage("assets/dungeonion/dungeon_item_illustration_sword.png"),
-      p.loadImage("assets/dungeonion/dungeon_item_illustration_book.png"),
-      p.loadImage("assets/dungeonion/dungeon_item_illustration_note.png"),
-      p.loadImage("assets/dungeonion/dungeon_item_illustration_staff.png"),
-      p.loadImage("assets/dungeonion/dungeon_item_illustration_key.png"),
+      p.loadImage("dungeonion/dungeon_interface_illustration.png"),
+      p.loadImage("dungeonion/dungeon_item_illustration_torch.png"),
+      p.loadImage("dungeonion/dungeon_item_illustration_sword.png"),
+      p.loadImage("dungeonion/dungeon_item_illustration_book.png"),
+      p.loadImage("dungeonion/dungeon_item_illustration_note.png"),
+      p.loadImage("dungeonion/dungeon_item_illustration_staff.png"),
+      p.loadImage("dungeonion/dungeon_item_illustration_key.png"),
     ];
   };
 
