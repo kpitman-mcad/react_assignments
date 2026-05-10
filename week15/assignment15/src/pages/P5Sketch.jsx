@@ -9,13 +9,33 @@ function P5Sketch({ sketch, className = "", title = "" }) {
 
   useEffect(() => {
     // Ensure p5 is loaded from the CDN before trying to use it
-    if (!window.p5) {
-      console.error("p5 not loaded");
-      return;
+
+    const init = () => {
+      if (!window.p5) {
+        console.error("p5 not loaded");
+        return;
+      }
+      instanceRef.current = new window.p5(sketch, containerRef.current);
+    };
+
+    if (window.p5) {
+      init();
+    } else {
+      // p5 CDN script is still loading — wait for it
+      const script = document.querySelector('script[src*="p5"]');
+      if (script) {
+        script.addEventListener("load", init);
+        return () => script.removeEventListener("load", init);
+      }
     }
 
-    // Create a new p5 instance and attach it to the container div
-    instanceRef.current = new window.p5(sketch, containerRef.current);
+    // if (!window.p5) {
+    //   console.error("p5 not loaded");
+    //   return;
+    // }
+
+    // // Create a new p5 instance and attach it to the container div
+    // instanceRef.current = new window.p5(sketch, containerRef.current);
 
     // Cleanup function runs when component unmounts
     // Prevents multiple canvases stacking or memory leaks

@@ -12,6 +12,8 @@ function Navbar() {
         return "Not Bird On A Wire";
       case "/irreggular":
         return "irrEggular";
+      case "/dungeonion":
+        return "Dungeonion";
       case "/about":
         return "About";
       default:
@@ -30,6 +32,7 @@ function Navbar() {
           <NavLink to="/">Introduction</NavLink>
           <NavLink to="/notbird">Not Bird</NavLink>
           <NavLink to="/irreggular">irrEggular</NavLink>
+          <NavLink to="/dungeonion">Dungeonion</NavLink>
           <NavLink to="/about">About</NavLink>
         </div>
       </nav>

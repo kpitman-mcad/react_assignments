@@ -9,8 +9,8 @@ import Footer from "./components/Footer";
 import { HashRouter, Routes, Route } from "react-router-dom";
 // Sketch js import
 import irrEggular from "./sketches/irrEggular";
-// import dungeonion from "./sketches/dungeonion";
-import notBird from "./sketches/notBird";
+import notBird from "./sketches/notbird/notBird";
+import dungeonion from "./sketches/dungeonion/dungeonion";
 
 // --- App Component ---
 // This is the main component of the app (the parent)
@@ -45,6 +45,17 @@ function App() {
                   sketch={irrEggular}
                   className="p5sketch-irreggular"
                   title="irrEggular"
+                />
+              }
+            />
+
+            <Route
+              path="/dungeonion"
+              element={
+                <P5Sketch
+                  sketch={dungeonion}
+                  className="p5sketch-dungeonion"
+                  title="Dungeonion"
                 />
               }
             />
